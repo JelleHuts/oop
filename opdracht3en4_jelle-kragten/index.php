@@ -22,6 +22,13 @@ class handDoek {
         echo $this->width;
     }
 }
-// echo "<pre>";
+class doek extends handDoek {
+    public function message() {
+        echo "Hier onder zitten specifieke doeken zoals een handoek";
+    }
+}
+$doek = new handoek ("cotton", 25.50, "white", "1.5m", "1m", "20g")
+$doek->displayVar();
+$doek->message();
 
 ?>
